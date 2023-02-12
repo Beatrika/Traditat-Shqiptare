@@ -1,3 +1,34 @@
+<?php
+
+include 'config.php';
+
+session_start();
+
+$user_id = $_SESSION['user_id'];
+
+if(!isset($user_id)){
+   header('location:login.php');
+}
+
+if(isset($_POST['send'])){
+
+   $name = mysqli_real_escape_string($conn, $_POST['name']);
+   $email = mysqli_real_escape_string($conn, $_POST['email']);
+   $number = $_POST['number'];
+   $msg = mysqli_real_escape_string($conn, $_POST['message']);
+
+   $select_message = mysqli_query($conn, "SELECT * FROM `message` WHERE name = '$name' AND email = '$email' AND number = '$number' AND message = '$msg'") or die('query failed');
+
+   if(mysqli_num_rows($select_message) > 0){
+      $message[] = 'message sent already!';
+   }else{
+      mysqli_query($conn, "INSERT INTO `message`(user_id, name, email, number, message) VALUES('$user_id', '$name', '$email', '$number', '$msg')") or die('query failed');
+      $message[] = 'message sent successfully!';
+   }
+
+}
+
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,7 +41,7 @@
         <div class="navbar" style="background-color: #2d2a30;">
             <nav>
                 <ul>
-                    <li class="home"><a href="index.html">HOME</a></li>
+                    <li class="home"><a href="index.php">HOME</a></li>
                     <li><a href="login.html"target="_blank" class="hover1">LOG-IN</a></li>
                     <li><a href="aboutus.html"target="_blank">ABOUT</a></li>
                     <li><a href="contactus.html" target="_blank">CONTACT</a></li>
@@ -78,13 +109,13 @@
                 <h3>Traditat<span>Shqiptare</span></h3>
     
                 <p class="footer-links">
-                    <a href="index.html">Home</a>
+                    <a href="index.php">Home</a>
     
                     <a href="aboutus.html">About</a>
     
-                    <a href="contactus.html">Contact</a>
+                    <a href="contactus.php">Contact</a>
     
-                    <a href="login.html">Log in</a>
+                    <a href="login.php">Log in</a>
                 </p>
     
                 <p class="footer-company-name">Copyright © 2022 <strong>TraditatShqiptare</strong>
