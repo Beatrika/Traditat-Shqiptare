@@ -16,7 +16,7 @@
                 <nav>
                     <ul>
                         <li class="home"><a href="index.html">HOME</a></li>
-                        <li><a href="login.html"target="_blank" class="hover1">LOG-IN</a></li>
+                        <li><a href="login.php"target="_blank" class="hover1">LOG-IN</a></li>
                         <li><a href="aboutus.html"target="_blank">ABOUT</a></li>
                         <li><a href="contactus.php" target="_blank">CONTACT</a></li>
                     </ul>
@@ -29,7 +29,7 @@
 <pre>Shqipëria ka finesë në tradita që nga lashtësia, ndërsa 
 ne do ju përcjellim historinë tonë të zbërthyer.</pre><br>
 <p style="color:white ;">Regjistrohuni për më shumë!</p>
-    <a href="register.php"> <button type="button" style="cursor: pointer;">Regjistrohu!</button></a>
+    <a href="register.html"> <button type="button" style="cursor: pointer;">Regjistrohu!</button></a>
 </div>
 <div class="col">
  <a href="veshjet.html"><div class="card card1">
