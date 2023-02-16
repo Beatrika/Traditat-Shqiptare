@@ -1,6 +1,6 @@
 <?php
 
-@include 'config.php';
+include 'project/config.php';
 
 if(isset($_POST['submit'])){
 

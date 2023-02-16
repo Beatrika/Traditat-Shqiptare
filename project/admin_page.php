@@ -1,6 +1,6 @@
 <?php
 
-@include 'config.php';
+include 'project/config.php';
 
 session_start();
 
@@ -29,7 +29,7 @@ if(!isset($admin_id)){
 </head>
 <body>
    
-<?php @include 'admin_header.php'; ?>
+<?php @include 'project/admin_header.php'; ?>
 
 <!-- admin dashboard section starts  -->
 
