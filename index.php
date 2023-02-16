@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Traditat Shqiptare</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylee.css">
     
 </head>
 <body>
@@ -29,7 +29,7 @@
 <pre>Shqipëria ka finesë në tradita që nga lashtësia, ndërsa 
 ne do ju përcjellim historinë tonë të zbërthyer.</pre><br>
 <p style="color:white ;">Regjistrohuni për më shumë!</p>
-    <a href="register.html"> <button type="button" style="cursor: pointer;">Regjistrohu!</button></a>
+    <a href="register.php"> <button type="button" style="cursor: pointer;">Regjistrohu!</button></a>
 </div>
 <div class="col">
  <a href="veshjet.html"><div class="card card1">

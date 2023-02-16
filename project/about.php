@@ -1,6 +1,6 @@
 <?php
 
-include 'config.php';
+@include 'config.php';
 
 session_start();
 
@@ -24,12 +24,12 @@ if(!isset($user_id)){
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="project/css/style.css">
 
 </head>
 <body>
    
-<?php include 'header.php'; ?>
+<?php include 'project/header.php'; ?>
 
 <div class="heading">
    <h3>about us</h3>
@@ -41,14 +41,14 @@ if(!isset($user_id)){
    <div class="flex">
 
       <div class="image">
-         <img src="images/about-img.jpg" alt="">
+         <img src="project/images/about-img.jpg" alt="">
       </div>
 
       <div class="content">
          <h3>why choose us?</h3>
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet voluptatibus aut hic molestias, reiciendis natus fuga, cumque excepturi veniam ratione iure. Excepturi fugiat placeat iusto facere id officia assumenda temporibus?</p>
          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit quos enim minima ipsa dicta officia corporis ratione saepe sed adipisci?</p>
-         <a href="contact.php" class="btn">contact us</a>
+         <a href="../contactus.php" class="btn">contact us</a>
       </div>
 
    </div>
@@ -62,7 +62,7 @@ if(!isset($user_id)){
    <div class="box-container">
 
       <div class="box">
-         <img src="images/pic-1.png" alt="">
+         <img src="project/images/pic-1.png" alt="">
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad, quo labore fugiat nam accusamus quia. Ducimus repudiandae dolore placeat.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
@@ -75,7 +75,7 @@ if(!isset($user_id)){
       </div>
 
       <div class="box">
-         <img src="images/pic-2.png" alt="">
+         <img src="project/images/pic-2.png" alt="">
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad, quo labore fugiat nam accusamus quia. Ducimus repudiandae dolore placeat.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
@@ -88,7 +88,7 @@ if(!isset($user_id)){
       </div>
 
       <div class="box">
-         <img src="images/pic-3.png" alt="">
+         <img src="project/images/pic-3.png" alt="">
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad, quo labore fugiat nam accusamus quia. Ducimus repudiandae dolore placeat.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
@@ -101,7 +101,7 @@ if(!isset($user_id)){
       </div>
 
       <div class="box">
-         <img src="images/pic-4.png" alt="">
+         <img src="project/images/pic-4.png" alt="">
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad, quo labore fugiat nam accusamus quia. Ducimus repudiandae dolore placeat.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
@@ -114,7 +114,7 @@ if(!isset($user_id)){
       </div>
 
       <div class="box">
-         <img src="images/pic-5.png" alt="">
+         <img src="project/images/pic-5.png" alt="">
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad, quo labore fugiat nam accusamus quia. Ducimus repudiandae dolore placeat.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
@@ -127,7 +127,7 @@ if(!isset($user_id)){
       </div>
 
       <div class="box">
-         <img src="images/pic-6.png" alt="">
+         <img src="project/images/pic-6.png" alt="">
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad, quo labore fugiat nam accusamus quia. Ducimus repudiandae dolore placeat.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
@@ -150,7 +150,7 @@ if(!isset($user_id)){
    <div class="box-container">
 
       <div class="box">
-         <img src="images/author-1.jpg" alt="">
+         <img src="project/images/author-1.jpg" alt="">
          <div class="share">
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>
@@ -161,7 +161,7 @@ if(!isset($user_id)){
       </div>
 
       <div class="box">
-         <img src="images/author-2.jpg" alt="">
+         <img src="project/images/author-2.jpg" alt="">
          <div class="share">
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>
@@ -172,7 +172,7 @@ if(!isset($user_id)){
       </div>
 
       <div class="box">
-         <img src="images/author-3.jpg" alt="">
+         <img src="project/images/author-3.jpg" alt="">
          <div class="share">
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>
@@ -183,7 +183,7 @@ if(!isset($user_id)){
       </div>
 
       <div class="box">
-         <img src="images/author-4.jpg" alt="">
+         <img src="project/images/author-4.jpg" alt="">
          <div class="share">
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>
@@ -194,7 +194,7 @@ if(!isset($user_id)){
       </div>
 
       <div class="box">
-         <img src="images/author-5.jpg" alt="">
+         <img src="project/images/author-5.jpg" alt="">
          <div class="share">
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>
@@ -205,7 +205,7 @@ if(!isset($user_id)){
       </div>
 
       <div class="box">
-         <img src="images/author-6.jpg" alt="">
+         <img src="project/images/author-6.jpg" alt="">
          <div class="share">
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>
@@ -225,10 +225,10 @@ if(!isset($user_id)){
 
 
 
-<?php include 'footer.php'; ?>
+<?php include 'project/footer.php'; ?>
 
 <!-- custom js file link  -->
-<script src="js/script.js"></script>
+<script src="project/css/js/script.js"></script>
 
 </body>
 </html>

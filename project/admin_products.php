@@ -72,7 +72,7 @@ if(isset($_POST['update_product'])){
       }
    }
 
-   header('location:admin_products.php');
+   header('location:project/admin_products.php');
 
 }
 
@@ -179,7 +179,7 @@ if(isset($_POST['update_product'])){
 
 
 <!-- custom admin js file link  -->
-<script src="js/admin_script.js"></script>
+<script src="project/css/js/admin_script.js"></script>
 
 </body>
 </html>
