@@ -1,9 +1,6 @@
 -- phpMyAdmin SQL Dump
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Mar 03, 2022 at 01:54 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -58,7 +55,7 @@ CREATE TABLE `message` (
 --
 
 CREATE TABLE `orders` (
-  `id` int(100) NOT NULL,
+  `id` int(100) NOT NULL, 
   `user_id` int(100) NOT NULL,
   `name` varchar(100) NOT NULL,
   `number` varchar(12) NOT NULL,

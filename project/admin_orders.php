@@ -1,6 +1,6 @@
 <?php
 
-include 'config.php';
+@include 'config.php';
 
 session_start();
 
@@ -22,7 +22,7 @@ if(isset($_POST['update_order'])){
 if(isset($_GET['delete'])){
    $delete_id = $_GET['delete'];
    mysqli_query($conn, "DELETE FROM `orders` WHERE id = '$delete_id'") or die('query failed');
-   header('location:admin_orders.php');
+   header('location:project/admin_orders.php');
 }
 
 ?>
@@ -39,12 +39,12 @@ if(isset($_GET['delete'])){
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
    <!-- custom admin css file link  -->
-   <link rel="stylesheet" href="css/admin_style.css">
+   <link rel="stylesheet" href="project/css/admin_style.css">
 
 </head>
 <body>
    
-<?php include 'admin_header.php'; ?>
+<?php include 'project/admin_header.php'; ?>
 
 <section class="orders">
 
@@ -74,7 +74,7 @@ if(isset($_GET['delete'])){
                <option value="completed">completed</option>
             </select>
             <input type="submit" value="update" name="update_order" class="option-btn">
-            <a href="admin_orders.php?delete=<?php echo $fetch_orders['id']; ?>" onclick="return confirm('delete this order?');" class="delete-btn">delete</a>
+            <a href="project/admin_orders.php?delete=<?php echo $fetch_orders['id']; ?>" onclick="return confirm('delete this order?');" class="delete-btn">delete</a>
          </form>
       </div>
       <?php
